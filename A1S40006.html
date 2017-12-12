@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>Apple SMP</title>
+
+<link rel="stylesheet" type="text/css" href="./res/css/style.css">
+<link rel="stylesheet" type="text/css" href="./res/js/plugins/datepicker/bootstrap-datepicker.min.css">
+
+<script type="text/javascript" src="./res/js/libs/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./res/js/libs/jquery.easing.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/selectOrDie/selectordie.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/datepicker/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/datepicker/bootstrap-datepicker.kr.min.js"></script>
+<script type="text/javascript" src="./res/js/common.js"></script>
+</head>
+<body>
+<div class="modal" id="modal" style="width:970px">
+	<div class="modal_header">
+		<strong>청구목록</strong>
+		<a href="#" class="modal_close">닫기</a>
+	</div>
+	<div class="modal_content">
+		<div>
+			<!-- 내용시작 -->
+
+			<div class="tbl_wrap02" id="rst_list">
+				<table class="tbl no_pad ta_c">
+					<colgroup>
+						<col style="width:8%" />
+						<col style="width:13%" />
+						<col />
+						<col style="width:7%" />
+						<col style="width:8%" />
+						<col style="width:8%" />
+						<col style="width:13%" />
+						<col style="width:13%" />
+						<col style="width:7%" />
+						<col style="width:56px" />
+					</colgroup>
+					<thead>
+					<tr>
+						<th scope="col">청구번호</th>
+						<th scope="col">서비스구분</th>
+						<th scope="col">대표서비스번호</th>
+						<th scope="col">상태</th>
+						<th scope="col">고객명</th>
+						<th scope="col">청구인명</th>
+						<th scope="col">발행유형</th>
+						<th scope="col">납부방법</th>
+						<th scope="col">납부주기</th>
+						<th scope="col">선택</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>12345</td>
+						<td>일반이동전화</td>
+						<td>010-12**-1***</td>
+						<td>사용중</td>
+						<td>홍길동</td>
+						<td>홍길동</td>
+						<td>스마트청구서</td>
+						<td>은행자동납부</td>
+						<td>21(T)</td>
+						<td>
+							<div class="chk">
+								<input type="checkbox" name="claim" value="" />
+								<label></label>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>12345</td>
+						<td>일반이동전화</td>
+						<td>010-12**-1***</td>
+						<td>사용중</td>
+						<td>홍길동</td>
+						<td>홍길동</td>
+						<td>스마트청구서</td>
+						<td>은행자동납부</td>
+						<td>21(T)</td>
+						<td>
+							<div class="chk">
+								<input type="checkbox" name="claim" value="" />
+								<label></label>
+							</div>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="btnbox relative ta_c">
+				<div>
+					<button type="button" class="btn active">적용</button>
+				</div>
+			</div>
+
+			<!-- //내용끝 -->
+		</div>
+	</div>
+</div>
+</body>
+</html>

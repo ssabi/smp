@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>Apple SMP</title>
+
+<link rel="stylesheet" type="text/css" href="./res/css/style.css">
+<link rel="stylesheet" type="text/css" href="./res/js/plugins/datepicker/bootstrap-datepicker.min.css">
+
+<script type="text/javascript" src="./res/js/libs/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./res/js/libs/jquery.easing.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/selectOrDie/selectordie.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/datepicker/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/datepicker/bootstrap-datepicker.kr.min.js"></script>
+<script type="text/javascript" src="./res/js/common.js"></script>
+</head>
+<body>
+<div class="modal" id="modal" style="width:648px">
+	<div class="modal_header">
+		<strong>관계 선택</strong>
+		<a href="#" class="modal_close">닫기</a>
+	</div>
+	<div class="modal_content">
+		<div>
+			<!-- 내용시작 -->
+			<div class="rs_list">
+				<div class="inner">
+
+					<div class="item">
+						<input type="radio" name="rs_type" id="rs01" value="" />
+						<label for="rs01"><span><span>내국인</span></span></label>
+					</div>
+					<div class="item">
+						<input type="radio" name="rs_type" id="rs02" value="" />
+						<label for="rs02"><span><span>자녀</span></span></label>
+					</div>
+					<div class="item">
+						<input type="radio" name="rs_type" id="rs03" value="" />
+						<label for="rs03"><span><span>친구/연인</span></span></label>
+					</div>
+					<div class="item">
+						<input type="radio" name="rs_type" id="rs04" value="" />
+						<label for="rs04"><span><span>부모</span></span></label>
+					</div>
+					<div class="item">
+						<input type="radio" name="rs_type" id="rs05" value="" />
+						<label for="rs05"><span><span>형제 자매</span></span></label>
+					</div>
+					<div class="item">
+						<input type="radio" name="rs_type" id="rs06" value="" />
+						<label for="rs06"><span><span>후견인</span></span></label>
+					</div>
+					<div class="item">
+						<input type="radio" name="rs_type" id="rs07" value="" />
+						<label for="rs07"><span><span>배우자</span></span></label>
+					</div>
+					<div class="item">
+						<input type="radio" name="rs_type" id="rs08" value="" />
+						<label for="rs08"><span><span>친척</span></span></label>
+					</div>
+					<div class="item">
+						<input type="radio" name="rs_type" id="rs09" value="" />
+						<label for="rs09"><span><span>기타</span></span></label>
+					</div>
+
+				</div>
+			</div>
+
+			<strong class="pop_tit">고객정보</strong>
+			<div class="tbl_wrap">
+				<table class="tbl">
+					<colgroup>
+						<col style="width:108px">
+						<col>
+						<col style="width:140px">
+						<col>
+					</colgroup>
+					<tbody>
+					<tr>
+						<th scope="row">고객유형</th>
+						<td colspan="3">
+							<div class="chkbox">
+								<div class="rd_label">
+									<input type="radio" name="type01" id="type01" checked="checked" />
+									<label for="type01"><span><span>법정생년월일</span></span></label>
+								</div>
+								<div class="rd_label">
+									<input type="radio" name="type01" id="type02" />
+									<label for="type02"><span><span>외국인등록번호</span></span></label>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">법정생년월일</th>
+						<td>
+							<input type="text" name="" id="" value="" placeholder="YYYY.MM.DD" />
+						</td>
+						<th scope="row" class="ta_r">이동전화번호</th>
+						<td>
+							<input type="number" name="" id="" value="" placeholder="010-0000-0000" />
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //내용끝 -->
+		</div>
+	</div>
+</div>
+</body>
+</html>

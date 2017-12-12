@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>Apple SMP</title>
+
+<link rel="stylesheet" type="text/css" href="./res/css/style.css">
+<link rel="stylesheet" type="text/css" href="./res/js/plugins/datepicker/bootstrap-datepicker.min.css">
+
+<script type="text/javascript" src="./res/js/libs/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./res/js/libs/jquery.easing.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/selectOrDie/selectordie.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/datepicker/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/datepicker/bootstrap-datepicker.kr.min.js"></script>
+<script type="text/javascript" src="./res/js/common.js"></script>
+</head>
+<body>
+<div class="modal" id="modal" style="width:648px">
+	<div class="modal_header">
+		<strong>신규가입 및 사전체크</strong>
+		<a href="#" class="modal_close">닫기</a>
+	</div>
+	<div class="modal_content">
+		<div>
+			<!-- 내용시작 -->
+			<div class="tbl_wrap02 info">
+				<table class="tbl">
+					<colgroup>
+						<col style="width:52%;" />
+						<col style="width:48%;" />
+					</colgroup>
+					<tbody>
+					<tr>
+						<th scope="row">신분증</th>
+						<td>정상</td>
+					</tr>
+					<tr>
+						<th scope="row">실명인증</th>
+						<td>정상(KAIT부정가입방지 확인)</td>
+					</tr>
+					<tr class="point">
+						<th scope="row">가입한도(본인명의)</th>
+						<td>가입불가능 (실시간)</td>
+					</tr>
+					<tr class="point">
+						<th scope="row">할부가입한도</th>
+						<td>가입불가능</td>
+					</tr>
+					<tr class="point">
+						<th scope="row">미납(자사)</th>
+						<td>143,180</td>
+					</tr>
+					<tr>
+						<th scope="row">미납(자사해지)</th>
+						<td>미납없음</td>
+					</tr>
+					<tr>
+						<th scope="row">미납(타사)</th>
+						<td>정상조회</td>
+					</tr>
+					<tr>
+						<th scope="row">6개월 내 번호이동 해지건 수</th>
+						<td>0건</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<p class="txt_guide"><i class="icon ico_exc"></i>붉게 표시된 항목으로 인하여 업무진행처리가 불가함을 알려드립니다.</p>
+
+			<div class="btnbox relative ta_c">
+				<div>
+					<button type="button" class="btn">재조회</button>
+					<button type="button" class="btn active">확인</button>
+				</div>
+			</div>
+			<!-- //내용끝 -->
+		</div>
+	</div>
+</div>
+</body>
+</html>

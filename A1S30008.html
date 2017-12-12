@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>Apple SMP</title>
+
+<link rel="stylesheet" type="text/css" href="./res/css/style.css">
+<link rel="stylesheet" type="text/css" href="./res/js/plugins/datepicker/bootstrap-datepicker.min.css">
+
+<script type="text/javascript" src="./res/js/libs/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./res/js/libs/jquery.easing.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/selectOrDie/selectordie.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/datepicker/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/datepicker/bootstrap-datepicker.kr.min.js"></script>
+<script type="text/javascript" src="./res/js/common.js"></script>
+</head>
+<body>
+<div class="modal" id="modal" style="width:648px">
+	<div class="modal_header">
+		<strong>충전허용금액 설정</strong>
+		<a href="#" class="modal_close">닫기</a>
+	</div>
+	<div class="modal_content">
+		<div>
+			<!-- 내용시작 -->
+
+			<div class="info_txt">
+				<p>해당 팅 요금제는 정보이용료 사용이 불가합니다.<br>단, 충전된 금액에 한해 정보이용료로 사용하실 수 있습니다.</p>
+				<span>(충전금액은 망내영상, 망외음성, 데이터로도 사용 가능합니다.)</span>
+			</div>
+
+			<div class="graybox">
+				<div class="caution">
+					<p>부모(법정대리인)동의 없이 자녀가 충전할 수 있는 금액을 미리 설정하는 제도입니다.</p>
+					<ul>
+						<li>설정 이후 충전허용금액 변경은 <span class="red">한도충전/팅충전선물관리</span> 화면에서 하시기 바랍니다.</li>
+						<li>월 중 요금제 변경으로 인한 충전허용금액 재설정으로 기본료 외(현재 기준 당월 충전누계액+재설정 된 충전허용금액) 만큼 추가 과금 될 수 있음을 안내해주시기 바랍니다.</li>
+						<li>충전허용금액은 월 최대 충전금액인 2만원까지 설정 가능합니다.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="tbl_wrap">
+				<table class="tbl">
+					<colgroup>
+						<col style="width:158px">
+						<col>
+					</colgroup>
+					<tbody>
+					<tr>
+						<th scope="row">충전허용금액 설정</th>
+						<td>
+							<select name="" id="" class="select">
+								<option value="">선택</option>
+								<option value="">######01</option>
+								<option value="">######02</option>
+								<option value="">######03</option>
+								<option value="">######04</option>
+								<option value="">######05</option>
+							</select>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="btnbox relative ta_c">
+				<div>
+					<button type="button" class="btn">취소</button>
+					<button type="button" class="btn active">적용</button>
+				</div>
+			</div>
+
+			<!-- //내용끝 -->
+		</div>
+	</div>
+</div>
+</body>
+</html>

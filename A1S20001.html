@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>Apple SMP</title>
+
+<link rel="stylesheet" type="text/css" href="./res/css/style.css">
+<link rel="stylesheet" type="text/css" href="./res/js/plugins/datepicker/bootstrap-datepicker.min.css">
+
+<script type="text/javascript" src="./res/js/libs/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./res/js/libs/jquery.easing.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/selectOrDie/selectordie.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/datepicker/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/datepicker/bootstrap-datepicker.kr.min.js"></script>
+<script type="text/javascript" src="./res/js/common.js"></script>
+</head>
+<body>
+			<div id="content">
+
+				<div class="section">
+					<div class="tbl_wrap">
+						<table class="tbl">
+							<colgroup>
+								<col style="width:142px" />
+								<col />
+							</colgroup>
+							<tbody>
+							<tr>
+								<th scope="row">명의고객</th>
+								<td>
+									<div class="chkbox">
+										<div class="rd_label">
+											<input type="radio" name="type01" id="chk01" checked="checked" />
+											<label for="chk01"><span><span>개인</span></span></label>
+										</div>
+										<div class="rd_label">
+											<input type="radio" name="type01" id="chk02" />
+											<label for="chk02"><span><span>외국인(등록증)</span></span></label>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">방문고객</th>
+								<td>
+									<div class="chkbox">
+										<div class="rd_label">
+											<input type="radio" name="type02" id="chk03" />
+											<label for="chk03"><span><span>성인</span></span></label>
+										</div>
+										<div class="rd_label">
+											<input type="radio" name="type02" id="chk04" />
+											<label for="chk04"><span><span>미성년자</span></span></label>
+										</div>
+									</div>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- //Section -->
+
+				<div class="section">
+					<h2 class="sec_tit">본인</h2>
+
+					<div class="tbl_wrap">
+						<table class="tbl">
+							<colgroup>
+								<col style="width:142px" />
+								<col />
+							</colgroup>
+							<tbody>
+							<tr>
+								<th scope="row">신분증</th>
+								<td><button type="button" class="btn active w100" id="btn_scan"><i class="icon ico_print"></i>신분증 스캔하기</button></td>
+							</tr>
+							<tr>
+								<th scope="row">연락번호</th>
+								<td><input type="number" name="" id="" value="" placeholder="연락 가능한 번호를 입력해주세요." /></td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- //Section -->
+
+			</div>
+			<!-- //Content -->
+
+<script>
+/*
+$("#btn_scan").bind({
+	"click" : function(){
+		modal({id:'layer01', pageUrl:'./A1S20002.html'});
+	}
+});
+*/
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>Apple SMP</title>
+
+<link rel="stylesheet" type="text/css" href="./res/css/style.css">
+<link rel="stylesheet" type="text/css" href="./res/js/plugins/datepicker/bootstrap-datepicker.min.css">
+
+<script type="text/javascript" src="./res/js/libs/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./res/js/libs/jquery.easing.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/selectOrDie/selectordie.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/datepicker/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/datepicker/bootstrap-datepicker.kr.min.js"></script>
+<script type="text/javascript" src="./res/js/common.js"></script>
+</head>
+<body>
+<div class="modal" id="modal" style="width:648px">
+	<div class="modal_header">
+		<strong>본인인증</strong>
+		<a href="#" class="modal_close">닫기</a>
+	</div>
+	<div class="modal_content">
+		<div>
+			<!-- 내용시작 -->
+
+			<div class="tbl_wrap">
+				<table class="tbl">
+					<colgroup>
+						<col style="width:158px">
+						<col>
+					</colgroup>
+					<tbody>
+					<tr>
+						<th scope="row">인증정보 입력</th>
+						<td><input type="number" name="" id="" value="" placeholder="법정생년월일 앞6자리를 입력해주세요." /></td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="caution type02">
+				<strong>고객정보 유출은 범죄행위입니다.</strong>
+				<p>고객의 개인정보를 제 3자에게 누설하거나 다른 용도로 사용하는 경우에는 ‘정보통신망 <br>
+				이용 촉진 및 정보보호’ 등에 관한 법률에 따라 5년 이하의 징역 또는 5천만원 이하의 <br>
+				벌금에 처합니다. (고객정보조회 Log자료 또는 별도저장, 관리됩니다.)</p>
+			</div>
+
+			<div class="graybox">
+				<div class="agreebox">
+					<div class="chk ext">
+						<input type="checkbox" name="agree" id="agree" value="">
+						<label for="agree">고객정보 인증서 SMS가 발송됨을 숙지하고 안내하였습니다.</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="btnbox relative ta_c">
+				<div>
+					<button type="button" class="btn">취소</button>
+					<button type="button" class="btn active">확인</button>
+				</div>
+			</div>
+
+			<!-- //내용끝 -->
+		</div>
+	</div>
+</div>
+</body>
+</html>

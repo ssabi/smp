@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>Apple SMP</title>
+
+<link rel="stylesheet" type="text/css" href="./res/css/style.css">
+<link rel="stylesheet" type="text/css" href="./res/js/plugins/datepicker/bootstrap-datepicker.min.css">
+
+<script type="text/javascript" src="./res/js/libs/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./res/js/libs/jquery.easing.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/selectOrDie/selectordie.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/datepicker/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/datepicker/bootstrap-datepicker.kr.min.js"></script>
+<script type="text/javascript" src="./res/js/common.js"></script>
+</head>
+<body>
+<div class="modal" id="modal" style="width:648px">
+	<div class="modal_header">
+		<strong>자동가입/자동해지</strong>
+		<a href="#" class="modal_close">닫기</a>
+	</div>
+	<div class="modal_content">
+		<div>
+			<!-- 내용시작 -->
+
+			<div class="tbl_wrap02">
+				<table class="tbl ta_c">
+					<colgroup>
+						<col style="width:18%;">
+						<col style="width:19%;">
+						<col style="width:40%;">
+						<col>
+					</colgroup>
+					<thead>
+					<tr>
+						<th scope="col">구분</th>
+						<th scope="col">상품/할인구분</th>
+						<th scope="col">상품/할인명</th>
+						<th scope="col">비고</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>자동가입</td>
+						<td>부가상품</td>
+						<td class="ta_l">그룹영상통화</td>
+						<td class="ta_l"></td>
+					</tr>
+					<tr>
+						<td>자동가입</td>
+						<td>부가상품</td>
+						<td class="ta_l">영상통화EV</td>
+						<td class="ta_l"></td>
+					</tr>
+					<tr>
+						<td><span class="red">자동해지</span></td>
+						<td>부가상품</td>
+						<td class="ta_l">레터링 수신거부</td>
+						<td class="ta_l"></td>
+					</tr>
+					<tr>
+						<td><span class="red">자동해지</span></td>
+						<td>부가상품</td>
+						<td class="ta_l">T전화 안심통화(아이폰용)</td>
+						<td class="ta_l"></td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="graybox">
+				<div class="agreebox">
+					<div class="chk ext">
+						<input type="checkbox" name="agree" id="agree" value="">
+						<label for="agree">고객에게 충분히 설명하였음을 확인합니다.</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="btnbox relative ta_c">
+				<div>
+					<button type="button" class="btn active">확인</button>
+				</div>
+			</div>
+
+			<!-- //내용끝 -->
+		</div>
+	</div>
+</div>
+</body>
+</html>

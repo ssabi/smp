@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>Apple SMP</title>
+
+<link rel="stylesheet" type="text/css" href="./res/css/style.css">
+<link rel="stylesheet" type="text/css" href="./res/js/plugins/datepicker/bootstrap-datepicker.min.css">
+
+<script type="text/javascript" src="./res/js/libs/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./res/js/libs/jquery.easing.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/selectOrDie/selectordie.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/datepicker/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/datepicker/bootstrap-datepicker.kr.min.js"></script>
+<script type="text/javascript" src="./res/js/common.js"></script>
+</head>
+<body>
+<div class="modal" id="modal" style="width:610px">
+	<div class="modal_header">
+		<strong>신분증 입력방식 선택</strong>
+		<a href="#" class="modal_close">닫기</a>
+	</div>
+	<div class="modal_content">
+		<div>
+			<!-- 내용시작 -->
+			<div class="ins_type">
+				<div>
+					<a href="javascript:void(0);" class="box" id="btn_sc">
+						<i class="icon print"></i>
+						<strong>신분증 스캔</strong>
+					</a>
+					<p>주민등록증, 운전면허증, 국가유공자증, <br>장애인등록증은 스캔 가능합니다.</p>
+				</div>
+
+				<div>
+					<a href="javascript:void(0);" class="box">
+						<i class="icon camera"></i>
+						<strong>촬영하기</strong>
+					</a>
+					<p>주민등록증 발급 확인서는 <br>촬영 가능합니다.</p>
+				</div>
+			</div>
+			<!-- //내용끝 -->
+		</div>
+	</div>
+</div>
+<script>
+$("#btn_sc").bind({
+	"click" : function(e){
+		e.preventDefault();
+
+		modal({id:'layer02', pageUrl:'A1S20003.html'});
+	}
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>Publisher Guide</title>
+
+<link rel="stylesheet" type="text/css" href="./res/css/style.css">
+<link rel="stylesheet" type="text/css" href="./res/js/plugins/datepicker/bootstrap-datepicker.min.css">
+
+<script type="text/javascript" src="./res/js/libs/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./res/js/libs/jquery.easing.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/selectOrDie/selectordie.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/datepicker/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="./res/js/plugins/datepicker/bootstrap-datepicker.kr.min.js"></script>
+<script type="text/javascript" src="./res/js/common.js"></script>
+</head>
+<body>
+<style type="text/css">
+html,body {height:auto;}
+body {background-color:#f9f9f9;padding:40px 0 60px;}
+.pg_ct {width:1024px;margin:0 auto;padding:20px;border-radius:10px;background-color:#fff;overflow:hidden;box-shadow:rgba(0,0,0,0.3)}
+.pg_contents {float:left;width:784px;border-radius:10px 0 0 10px}
+.pg_ct nav {float:left;width:160px;border-radius:0 10px 10px 0}
+.pg_ct nav ul {position:fixed;top:60px;}
+.pg_ct nav li {padding-left:20px;margin-bottom:20px;}
+.pg_section {margin-bottom:30px;}
+.pg_section h3 {font-size:13px;}
+.pg_section .row_box {padding:10px;border:1px dashed #ccc}
+.pg_section .row_box + .row_box {margin-top:10px;}
+h1 {font-size:24px;margin-bottom:30px;font-weight:normal;}
+h2 {font-size:16px;color:#555;margin-bottom:10px;font-weight:normal;}
+h3 {font-size:13px;margin-bottom:30px;font-weight:normal;}
+table.pg_type1 {width:100%;text-align:left;vertical-align:middle;font-size:12px}
+table.pg_type1>tbody>tr:nth-of-type(odd) {background-color:#f9f9f9;}
+table.pg_type1 thead th {padding:8px;border:1px solid #bbb;text-align:center;}
+table.pg_type1 tbody th,
+table.pg_type1 tbody td {padding:8px;border:1px solid #ddd}
+table.pg_type1t tbody th.header {background-color:#fff;text-align:center}
+</style>
+<div id="pg_ct" class="pg_ct">
+	<div class="pg_contents">
+		<h1>가이드</h1>
+
+		<div class="pg_section">
+			<h2 id="folders">폴더구조</h2>
+
+			<table class="pg_type1">
+				<colgroup>
+					<col style="width:200px;"/>
+					<col style=""/>
+				</colgroup>
+				<thead>
+				<tr>
+					<th>경로</th>
+					<th>하위경로</th>
+					<th>설명</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>/</td>
+					<td></td>
+					<td>퍼블리싱 루트디렉토리</td>
+				</tr>
+				<tr>
+					<td>/res/js/libs</td>
+					<td>/</td>
+					<td>라이브러리 폴더</td>
+				</tr>
+				<tr>
+					<td>/res/js/plugins</td>
+					<td>/selectOrDie</td>
+					<td>select 플러그인</td>
+				</tr>
+				<tr>
+					<td>/res/js/plugins</td>
+					<td>/datepicker</td>
+					<td>달력 플러그인</td>
+				</tr>
+				<tr>
+					<td>/res/js</td>
+					<td>/</td>
+					<td>UI 핸들링</td>
+				</tr>
+				<tr>
+					<td>/res/img</td>
+					<td>/</td>
+					<td>이미지 폴더</td>
+				</tr>
+				<tr>
+					<td>/res/img</td>
+					<td>/common</td>
+					<td>공통 이미지</td>
+				</tr>
+				<tr>
+					<td>/res/img</td>
+					<td>/icon</td>
+					<td>아이콘 이미지 모음</td>
+				</tr>
+				<tr>
+					<td>/res/css</td>
+					<td>/</td>
+					<td>css 파일</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="pg_section">
+			<h2 id="tab">탭</h2>
+
+			<table class="pg_type1">
+				<colgroup>
+					<col style="width:150px;"/>
+					<col style="width:150px;"/>
+					<col style=""/>
+				</colgroup>
+				<thead>
+				<tr>
+					<th>선택자</th>
+					<th>종류</th>
+					<th>형상</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<th class="header">div.chkbox</th>
+					<td>기본</td>
+					<td>
+						<div class="chkbox">
+							<div class="rd_label">
+								<input type="radio" name="type01" id="chk01" />
+								<label for="chk01"><span><span>성인</span></span></label>
+							</div>
+							<div class="rd_label">
+								<input type="radio" name="type01" id="chk02" />
+								<label for="chk02"><span><span>미성년자</span></span></label>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th class="header">div.chkbox.ext</th>
+					<td>확장</td>
+					<td>
+						<div class="chkbox ext">
+							<div class="rd_label">
+								<input type="radio" name="type02" id="chk03" />
+								<label for="chk03"><span><span>
+									<div><p>지원금 상응 요금할인<span>(총 요금할인 24개월 기준)</span></p><em>336,600<span>원</span></em></div>
+								</span></span></label>
+							</div>
+							<div class="rd_label">
+								<input type="radio" name="type02" id="chk04" />
+								<label for="chk04"><span><span>
+									<div><p>단말기 지원금</p><em>6,100<span>원</span></em></div>
+								</span></span></label>
+							</div>
+					</td>
+				</tr>
+				<tr>
+					<th class="header">div.chkbox.col3</th>
+					<td>3컬럼</td>
+					<td>
+						<div class="chkbox col3">
+							<div class="rd_label">
+								<input type="radio" name="type03" id="rate01" />
+								<label for="rate01"><span><span>T-world확인(온라인/앱)</span></span></label>
+							</div>
+							<div class="rd_label">
+								<input type="radio" name="type03" id="rate02" />
+								<label for="rate02"><span><span>스마트청구서(앱)</span></span></label>
+							</div>
+							<div class="rd_label">
+								<input type="radio" name="type03" id="rate03" />
+								<label for="rate03"><span><span>이메일청구서</span></span></label>
+							</div>
+						</div>
+					</td>
+				</tr>
+				</tbody> 
+			</table>
+		</div>
+
+		<div class="pg_section">
+			<h2 id="buttons">버튼</h2>
+
+			<table class="pg_type1">
+				<colgroup>
+					<col style="width:150px;"/>
+					<col style="width:150px;"/>
+					<col style=""/>
+				</colgroup>
+				<thead>
+					<tr>
+						<th>선택자</th>
+						<th>종류</th>
+						<th>형상</th>
+					</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<th class="header">.btn</th>
+					<td>일반</td>
+					<td>
+						<button type="button" class="btn">버튼명</button>
+					</td>
+				</tr>
+				<tr>
+					<th class="header">.btn.active</th>
+					<td>일반(강조)</td>
+					<td>
+						<button type="button" class="btn active">버튼명</button>
+					</td>
+				</tr>
+				<tr>
+					<th class="header">.btn</th>
+					<td>일반(확장)</td>
+					<td>
+						<button type="button" class="btn">버튼명<i class="icon ico_plus"></i></button>
+					</td>
+				</tr>
+				<tr>
+					<th class="header">.btn.prev, .btn.next</th>
+					<td>이전, 다음</td>
+					<td>
+						<button type="button" class="btn prev">이전</button>
+						<button type="button" class="btn next">다음</button>
+					</td>
+				</tr>
+				<tr>
+					<th class="header">.btn.next.active</th>
+					<td>다음(강조)</td>
+					<td>
+						<button type="button" class="btn next active">다음</button>
+					</td>
+				</tr>
+				</tbody> 
+			</table>
+		</div>
+
+		<div class="pg_section">
+			<h2 id="icons">아이콘</h2>
+
+			<table class="pg_type1">
+				<colgroup>
+					<col style="width:150px;"/>
+					<col style="width:150px;"/>
+					<col style=""/>
+				</colgroup>
+				<thead>
+					<tr>
+						<th>선택자</th>
+						<th>종류</th>
+						<th>형상</th>
+					</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<th class="header">.ico_print</th>
+					<td>프린트</td>
+					<td style="background-color:#000">
+						<i class="icon ico_print"></i>
+					</td>
+				</tr>
+				<tr>
+					<th class="header">.print</th>
+					<td>신분증 스캔</td>
+					<td>
+						<i class="icon print"></i>
+					</td>
+				</tr>
+				<tr>
+					<th class="header">.camera</th>
+					<td>촬영하기</td>
+					<td>
+						<i class="icon camera"></i>
+					</td>
+				</tr>
+				<tr>
+					<th class="header">.ico_family</th>
+					<td>가족관계증명서</td>
+					<td>
+						<i class="icon ico_family"></i>
+					</td>
+				</tr>
+				<tr>
+					<th class="header">.ico_resident</th>
+					<td>주민등록초본</td>
+					<td>
+						<i class="icon ico_resident"></i>
+					</td>
+				</tr>
+				<tr>
+					<th class="header">.ico_cate01</th>
+					<td>메인화면 - 신규가입</td>
+					<td>
+						<i class="icon ico_cate01"></i>
+					</td>
+				</tr>
+				<tr>
+					<th class="header">.ico_cate02</th>
+					<td>메인화면 - 번호이동</td>
+					<td>
+						<i class="icon ico_cate02"></i>
+					</td>
+				</tr>
+				<tr>
+					<th class="header">.ico_cate03</th>
+					<td>메인화면 - 판매기변, 교품기변</td>
+					<td>
+						<i class="icon ico_cate03"></i>
+					</td>
+				</tr>
+				<tr>
+					<th class="header">.ico_cate04</th>
+					<td>메인화면 - 기변철회</td>
+					<td>
+						<i class="icon ico_cate04"></i>
+					</td>
+				</tr>
+				<tr>
+					<th class="header">.ico_cate05</th>
+					<td>메인화면 - 해지</td>
+					<td>
+						<i class="icon ico_cate05"></i>
+					</td>
+				</tr>
+				<tr>
+					<th class="header">.ico_exc</th>
+					<td>참고</td>
+					<td>
+						<i class="icon ico_exc"></i>
+					</td>
+				</tr>
+				<tr>
+					<th class="header">.ico_exc.type02</th>
+					<td>참고</td>
+					<td style="background-color:#000">
+						<i class="icon ico_exc type02"></i>
+					</td>
+				</tr>
+				<tr>
+					<th class="header">.ico_plus</th>
+					<td>플러스</td>
+					<td style="background-color:#000">
+						<i class="icon ico_plus"></i>
+					</td>
+				</tr>
+				<tr>
+					<th class="header">.ico_del</th>
+					<td>삭제</td>
+					<td>
+						<i class="icon ico_del"></i>
+					</td>
+				</tr>
+				<tr>
+					<th class="header">.ico_cal</th>
+					<td>달력</td>
+					<td>
+						<i class="icon ico_cal"></i>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="pg_section">
+			<h2 id="form">폼요소</h2>
+
+			<table class="pg_type1">
+				<colgroup>
+					<col style="width:150px;"/>
+					<col style="width:150px;"/>
+					<col style=""/>
+				</colgroup>
+				<thead>
+					<tr>
+						<th>선택자</th>
+						<th>종류</th>
+						<th>형상</th>
+					</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<th class="header">.chk</th>
+					<td>checkbox</td>
+					<td>
+						<div class="chk">
+							<input type="checkbox" name="hp" id="c01" value="">
+							<label for="c01"></label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th class="header">.chk.ext</th>
+					<td>checkbox</td>
+					<td>
+						<div class="chk ext">
+							<input type="checkbox" name="ext" id="c02" value="">
+							<label for="c02">고객정보 인증서 SMS가 발송됨을 숙지하고 안내하였습니다.</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th class="header">.select</th>
+					<td>select</td>
+					<td>
+						<select name="" id="" class="select">
+							<option value="">선택</option>
+							<option value="">######01</option>
+							<option value="">######02</option>
+							<option value="">######03</option>
+							<option value="">######04</option>
+							<option value="">######05</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th class="header">.datepicker</th>
+					<td>datepicker</td>
+					<td>
+						<input type="text" class="datepicker" name="" id="" value="" />
+					</td>
+				</tr>
+				</tbody> 
+			</table>
+		</div>
+
+		<div class="pg_section">
+			<h2 id="table_css">텍스트 정렬</h2>
+
+			<table class="pg_type1">
+				<colgroup>
+					<col style="width:150px;"/>
+					<col style="width:150px;"/>
+					<col style=""/>
+				</colgroup>
+				<thead>
+				<tr>
+					<th>부여가능 대상</th>
+					<th>CSS</th>
+					<th>기능</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<th class="header">*</th>
+					<td>.ta_l</td>
+					<td class="ta_l">
+					  텍스트 왼쪽 정렬
+					</td>
+				</tr>
+				<tr>
+					<th class="header">*</th>
+					<td>.ta_r</td>
+					<td class="ta_r">
+					  텍스트 오른쪽 정렬
+					</td>
+				</tr>
+				<tr>
+					<th class="header">*</th>
+					<td>.ta_c</td>
+					<td class="ta_c">
+					  텍스트 가운데 정렬
+					</td>
+				</tr>
+				</tbody> 
+			</table>
+		</div>
+
+		<div class="pg_section">
+			<h2 id="tables">테이블</h2>
+
+			<div class="row_box">
+				<h3>div.tbl_wrap > .tbl</h3>
+
+				<div class="tbl_wrap">
+					<table class="tbl">
+						<colgroup>
+							<col style="width:142px">
+							<col>
+						</colgroup>
+						<tbody>
+						<tr>
+							<th scope="row">명의고객</th>
+							<td><input type="text" name="" id="" value="" /></td>
+						</tr>
+						<tr>
+							<th scope="row">주민등록번호</th>
+							<td>
+								<div class="col2">
+									<div>
+										<input type="number" name="" id="" value="" placeholder="앞번호 6자리">
+									</div>
+									<div>
+										<input type="number" name="" id="" value="" placeholder="뒷번호 7자리">
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">신분증</th>
+							<td><button type="button" class="btn active w100" id="btn_scan"><i class="icon ico_print"></i>신분증 스캔하기</button></td>
+						</tr>
+						<tr>
+							<th scope="row">관계</th>
+							<td>
+								<div class="fn_txt">
+									<input type="text" name="" id="" value="" placeholder="명의고객과의 관계를 선택해주세요." readonly="readonly">
+									<button type="button" class="dot"></button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">구비서류</th>
+							<td>
+								<div class="inbtn type02">
+									<div class="fn_txt">
+										<input type="text" name="" id="" value="" placeholder="" readonly="readonly">
+									</div>
+									<button type="button" class="btn">촬영하기</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">신규가입번호</th>
+							<td>
+								<div class="inbtn">
+									<input type="text" name="" id="" value="">
+									<button type="button" class="btn">번호검색</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">단말기/일련번호</th>
+							<td>
+								<div class="inbtn">
+									<div class="col2">
+										<div>
+											<div class="fn_txt">
+												<input type="text" name="" id="" value="" placeholder="" readonly="readonly">
+												<button type="button" class="dot"></button>
+											</div>
+										</div>
+
+										<div>
+											<input type="text" name="" id="" value="">
+										</div>
+									</div>
+									<button type="button" class="btn">확인</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">요금제</th>
+							<td>
+								<div class="fn_txt">
+									<input type="text" name="" id="" value="" placeholder="" readonly="readonly">
+									<button type="button" class="dot"></button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">부가상품</th>
+							<td>
+								<div class="inbtn">
+									<div class="tag">
+										<span>선택약정할인(24개월)<a href="javascript:void(0);" class="icon ico_del">삭제</a></span>
+										<span>LTE안심옵션<a href="javascript:void(0);" class="icon ico_del">삭제</a></span>
+									</div>
+									<button type="button" class="btn">상품추가<i class="icon ico_plus"></i></button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">예금주/관계</th>
+							<td>
+								<div class="col2">
+									<div>
+										<input type="text" name="" id="" value="">
+									</div>
+									<div>
+										<div class="fn_txt">
+											<input type="text" name="" id="" value="" placeholder="" readonly="readonly">
+											<button type="button" class="dot"></button>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">주소</th>
+							<td>
+								<div class="addr">
+									<div>
+										<input type="text" name="" id="" value="" readonly="readonly">
+										<p><input type="text" name="" id="" value="" readonly="readonly"></p>
+										<button type="button" class="btn">우편번호검색</button>
+									</div>
+									<input type="text" name="" id="" value="" readonly="readonly">
+								</div>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="row_box">
+				<h3>div.info_area > table</h3>
+
+				<div class="info_area">
+					<table>
+						<colgroup>
+							<col style="width:109px;">
+							<col>
+						</colgroup>
+						<tbody>
+						<tr>
+							<th scope="row">신분증 종류</th>
+							<td><input type="text" name="" id="" value=""></td>
+						</tr>
+						<tr>
+							<th scope="row">주민등록번호</th>
+							<td>
+								<div class="col2">
+									<div>
+										<input type="number" name="" id="" value="" min="0" max="999999">
+									</div>
+
+									<div>
+										<input type="number" name="" id="" value="" min="0" max="9999999">
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">발급일자</th>
+							<td>
+								<div class="calendar">
+									<input type="text" class="datepicker" name="" id="" value="" />
+									<i class="icon ico_cal"></i>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">면허번호</th>
+							<td>
+								<div class="license">
+									<p><input type="number" name="" id="" value=""></p>
+									<p><input type="number" name="" id="" value=""></p>
+									<p><input type="number" name="" id="" value=""></p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">주소</th>
+							<td>
+								<div class="addr">
+									<p><input type="text" name="" id="" value=""></p>
+									<p><input type="text" name="" id="" value=""></p>
+								</div>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="row_box">
+				<h3>div.tbl_wrap02 > .tbl</h3>
+
+				<div class="tbl_wrap02" id="rst_list">
+					<table class="tbl ta_c">
+						<colgroup>
+							<col style="width:10%;">
+							<col style="width:25%;">
+							<col style="width:25%;">
+							<col>
+							<col style="width:104px">
+						</colgroup>
+						<thead>
+						<tr>
+							<th scope="col">모델코드</th>
+							<th scope="col">모델명</th>
+							<th scope="col">펫네임</th>
+							<th scope="col">출고가</th>
+							<th scope="col">선택</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>CGHU</td>
+							<td>IPHONE7_256GR</td>
+							<td>IPHONE7_256G</td>
+							<td>1,130,800원</td>
+							<td>
+								<div class="chk">
+									<input type="checkbox" name="hp" value="">
+									<label></label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>CGNR</td>
+							<td>IPHONE7_256GPR</td>
+							<td>IPHONE7_256G</td>
+							<td>1,130,800원</td>
+							<td>
+								<div class="chk">
+									<input type="checkbox" name="hp" value="">
+									<label></label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>CGHV</td>
+							<td>IPHONE7_256GJ</td>
+							<td>IPHONE7_256G</td>
+							<td>1,130,800원</td>
+							<td>
+								<div class="chk">
+									<input type="checkbox" name="hp" value="">
+									<label></label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>CGHT</td>
+							<td>IPHONE7_256GG</td>
+							<td>IPHONE7_256G</td>
+							<td>1,130,800원</td>
+							<td>
+								<div class="chk">
+									<input type="checkbox" name="hp" value="">
+									<label></label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>CGHR</td>
+							<td>IPHONE7_256GB</td>
+							<td>IPHONE7_256G</td>
+							<td>1,130,800원</td>
+							<td>
+								<div class="chk">
+									<input type="checkbox" name="hp" value="">
+									<label></label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>CGHR</td>
+							<td>IPHONE7_256GB</td>
+							<td>IPHONE7_256G</td>
+							<td>1,130,800원</td>
+							<td>
+								<div class="chk">
+									<input type="checkbox" name="hp" value="">
+									<label></label>
+								</div>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="row_box">
+				<h3>div.tbl_wrap02.info > .tbl</h3>
+
+				<div class="tbl_wrap02 info">
+					<table class="tbl">
+						<colgroup>
+							<col style="width:52%;">
+							<col style="width:48%;">
+						</colgroup>
+						<tbody>
+						<tr>
+							<th scope="row">신분증</th>
+							<td>정상</td>
+						</tr>
+						<tr class="point">
+							<th scope="row">할부가입한도</th>
+							<td>가입불가능</td>
+						</tr>
+						<tr>
+							<th scope="row">미납(자사해지)</th>
+							<td>미납없음</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="pg_section">
+			<h2 id="paginate">Paginate</h2>
+
+			<div class="row_box">
+				<h3>.paginate</h3>
+
+				<div class="pagination">
+					<div>
+						<a href="#" class="first">처음으로</a>
+						<a href="#" class="prev">이전</a>
+						<span>
+							<a href="#">1</a>
+							<a href="#">2</a>
+							<a href="#" class="on">3</a>
+							<a href="#">4</a>
+							<a href="#">5</a>
+						</span>
+						<a href="#" class="next">다음</a>
+						<a href="#" class="last">끝으로</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<nav>
+		<ul>
+			<li><a href="#folders">폴더구조</a></li>
+			<li><a href="#tab">탭</a></li>
+			<li><a href="#buttons">버튼</a></li>
+			<li><a href="#form">폼요소</a></li>
+			<li><a href="#table_css">텍스트 정렬</a></li>
+			<li><a href="#tables">테이블</a></li>
+			<li><a href="#paginate">Paginate</a></li>
+		</ul>
+	</nav>
+</div>
+</body>
+</html>
